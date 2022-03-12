@@ -18,3 +18,23 @@ UIPath Error Handling And Skill 공유
     - 그나마 효과있던 방법은 Selector가 Simulate 옵션으로 되어있으면 정상적으로 클릭을 하는데, 이미 개발이 다 된 상태에서 바꾸기가 엄두가 안났다
     - 구글링으로 뜻밖의 수확을 얻을 수 있었는데, Window10과 RDP세션 연결시 버그의 일종이였다.
     - 따라서 충돌이 발생하는 reg를 수정하였고, 그 뒤로 에러가 발생하지 않았다. 👍🏻
+
+
+👉🏻클릭은 하는데... 조금 느리게 하네.. 에러는 안나는데...? 
+    
+    Why? 🤷🏻‍♂️
+    - 바꾼거라곤 내 바람과는 다르게 속절없이 흘러가는 시간만 바꼈다..
+    
+    현상
+    - UI Selector 정보를 가져오는 Activity들이 전부 엄처 느리게 작동한다. 
+    - 작동으 안하는것은 아니고.. 하기 하는데 약 20배정도 느리게?
+    
+    해결
+    - 생각보다 간단했다. 
+    - 모든 Selector를 사용하는 Activity는 WaitForReady 라는 Property를 사용 할 수 있다.
+    - 각 옵션을 설명하자면
+    - None (UI info 가 전부 load 되지 않아도 클릭하겠다.)
+    - Interactive (UI info가 어느정도 load되면 클릭하겠다. [default 값])
+    - Complete (UI info가 전부 load되어야 클릭하겠다.)
+    - 기본값ㅇ interactive로 되어있는데 이를 무자비해보이는 none으로 바꿨더니 됐다. 
+    - 문제 해결! 👍🏻
