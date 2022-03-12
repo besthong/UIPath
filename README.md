@@ -1,7 +1,7 @@
 # UIPath
 UIPath Error Handling And Skill 공유
 
-👉🏻회사에서 나를 굉장히 힘들게했던 TimeoutError를 정리해보자.
+👇🏼 회사에서 나를 굉장히 힘들게했던 TimeoutError를 정리해보자.
 
     Why? 🤷🏻‍♂️
     - 일반적으로 Timeout은 UI 정보값인 Selector를 일시적을 못불러올때 발생한다. 
@@ -23,7 +23,7 @@ UIPath Error Handling And Skill 공유
 
 
 
-👉🏻클릭은 하는데... 조금 느리게 하네.. 에러는 안나는데...? 
+👇🏼 클릭은 하는데... 조금 느리게 하네.. 에러는 안나는데...? 
     
     Why? 🤷🏻‍♂️
     - 바꾼거라곤 내 바람과는 다르게 속절없이 흘러가는 시간만 바꼈다..
